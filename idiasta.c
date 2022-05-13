@@ -2,9 +2,10 @@
 //   HOW IT WORKS
 //----------------------------------------------------------------------------------------------------------
 // 1. MAIN proc prompts for the desired function and calls the main procedure CONCISE that does the job
-// 2. CONCISE iterates through all the rows and calls MODULE_CHANGE when the row beggins with a module name
+// 2. CONCISE iterates through all rows and if the row contains a module name + offset and that module name
+//    is different from the last one then it calls MODULE_CHANGED
 //
-// ATTENTION should be paid to the sequence strtok is used ! 
+// ATTENTION should be paid to the sequence in which strtok() is used ! 
 //
 //----------------------------------------------------------------------------------------------------------
 //   TODO
